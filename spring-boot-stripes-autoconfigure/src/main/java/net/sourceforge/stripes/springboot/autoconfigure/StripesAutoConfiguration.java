@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration;
+import org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -27,7 +27,7 @@ import net.sourceforge.stripes.action.ActionBean;
 import net.sourceforge.stripes.controller.DynamicMappingFilter;
 import net.sourceforge.stripes.controller.StripesFilter;
 import net.sourceforge.stripes.util.Log;
-
+import net.sourceforge.stripes.springboot.autoconfigure.StripesProperties;
 
 @Configuration
 @ConditionalOnClass( name="net.sourceforge.stripes.springboot.autoconfigure.SpringBootVFS" ) // @see http://stackoverflow.com/a/25790672
